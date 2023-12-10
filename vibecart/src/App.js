@@ -1,12 +1,23 @@
-import "./App.css";
-import MainLayout from "./components/layouts/MainLayout";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Hoodies from "./pages/Hoodies";
+import Shoes from "./pages/Shoes";
+import SingleProduct from "./pages/SingleProduct";
+import Cart from "./pages/Cart";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <MainLayout></MainLayout>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hoodie" element={<Hoodies />} />
+        <Route path="/shoes" element={<Shoes />} />
+        <Route path="/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
