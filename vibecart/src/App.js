@@ -5,6 +5,8 @@ import Hoodies from "./pages/Hoodies";
 import Shoes from "./pages/Shoes";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
+import Error from "./pages/Error";
+import Accont from "./pages/Accont";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/shoes" element={<Shoes />} />
         <Route path="/singleproduct/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/account" element={<Accont />} />
       </Routes>
     </Router>
   );
