@@ -1,11 +1,19 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
-import Main from "../assets/Hero-1.jpg";
+// import { BsArrowRight } from "react-icons/bs";
+// import { NavLink } from "react-router-dom";
+// import Main from "../assets/Hero-1.jpg";
 const Hero = () => {
   return (
     <>
-      <div id="hero" className="flex justify-between container mx-auto ">
+      <div id="hero" className="flex container mx-auto gap-4 px-5 ">
+        <div id="hero-part1" className="bg-red-400  w-7/12 h-full ">
+          <h1> Design Your Vision, AI-Powered Precision</h1>
+        </div>
+        <div id="hero-part2" className="bg-green-400  w-5/2 h-full">
+          <h1>hello</h1>
+        </div>
+      </div>
+      {/* <div id="hero" className="flex justify-between container mx-auto ">
         <img className="w-screen h-4/5 " src={Main} alt="" />
         <div
           id="overlay"
@@ -34,7 +42,7 @@ const Hero = () => {
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
