@@ -1,16 +1,35 @@
 import React from "react";
-// import { BsArrowRight } from "react-icons/bs";
-// import { NavLink } from "react-router-dom";
-// import Main from "../assets/Hero-1.jpg";
+import { BsArrowRight } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+import Main from "../assets/Hero-1.jpg";
 const Hero = () => {
   return (
     <>
-      <div id="hero" className="flex container mx-auto gap-4 px-5 ">
-        <div id="hero-part1" className="bg-red-400  w-7/12 h-full ">
-          <h1> Design Your Vision, AI-Powered Precision</h1>
+      <div
+        id="hero"
+        className="md:flex max-w-[1400px] mt-[-96] w-full h-screen mx-auto gap-10"
+      >
+        <div
+          id="hero-part1"
+          className="flex flex-col md:w-[60%] h-[50%] md:h-[100%] py-32 md:py-80 px-10"
+        >
+          <p className="pb-2 text-orange-600 ">Powered by AI</p>
+          <h1 className="md:text-4xl sm:text-2xl text-xl  pb-5 ">
+            Design Your Vision, <br></br> AI-Powered Precision
+          </h1>
+          <p className="text-xs sm:text-sm md:text-md pb-2">
+            Your ideas, our AI: Crafting stunning designs effortlessly—logos,
+            illustrations, web layouts—bringing imagination to life.
+          </p>
+          <NavLink to={"/singleproduct/:id"}>
+            <button className="flex items-center gap-2 px-4 py-2 border rounded-lg mt-2  hover:bg-orange-600  hover:text-white bg-white text-orange-600">
+              Explore <BsArrowRight />
+            </button>
+          </NavLink>
         </div>
-        <div id="hero-part2" className="bg-green-400  w-5/2 h-full">
-          <h1>hello</h1>
+
+        <div id="hero-part2" className="md:w-[45%] ">
+          <img src={Main} className="h-[100%]" alt="" />
         </div>
       </div>
       {/* <div id="hero" className="flex justify-between container mx-auto ">
