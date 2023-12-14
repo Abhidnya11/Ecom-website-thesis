@@ -1,7 +1,9 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-import Main from "../assets/Hero-1.jpg";
+// import Main from "../assets/Hero-1.jpg";
+import Hoodie from "../../canvas/Hoodie";
+
 const Hero = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const Hero = () => {
       >
         <div
           id="hero-part1"
-          className="flex flex-col md:w-[60%] h-[50%] md:h-[100%] py-32 md:py-80 px-10"
+          className="flex flex-col md:w-[60%] h-[30%] md:h-[100%] py-12 md:py-80 px-10"
         >
           <p className="pb-2 text-orange-600 ">Powered by AI</p>
           <h1 className="md:text-4xl sm:text-2xl text-xl  pb-5 ">
@@ -28,8 +30,9 @@ const Hero = () => {
           </NavLink>
         </div>
 
-        <div id="hero-part2" className="md:w-[45%] ">
-          <img src={Main} className="h-[100%]" alt="" />
+        <div id="hero-part2" className="h-[60%] md:h-full md:w-[45%] md:pb-20 ">
+          {/* <img src={Main} className="h-[100%]" alt="" /> */}
+          <Hoodie />
         </div>
       </div>
       {/* <div id="hero" className="flex justify-between container mx-auto ">
