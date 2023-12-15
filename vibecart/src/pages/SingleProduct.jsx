@@ -48,7 +48,7 @@ const SingleProduct = () => {
             <h2 className="text-xl font-semibold mb-2">Size</h2>
             <ul className="flex gap-4">
               <li className="border border-orange-600 rounded-3xl px-2 py-1">
-                XS
+                <input type="button" value="XS" />
               </li>
               <li className="border border-orange-600 rounded-3xl px-3 py-1">
                 S
@@ -67,12 +67,17 @@ const SingleProduct = () => {
               </li>
             </ul>
           </div>
-
-          <NavLink to={"/singleproduct/:id"}>
-            <button className="mt-6 md:mt-20 w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg mt-2 bg-orange-600 text-white hover:text-gray-900   hover:bg-orange-500">
-              Buy Now <BsArrowRight />
+          <div className="mt-6 md:mt-20 ">
+            <button className="w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg mt-2 bg-orange-600 text-white hover:text-gray-900   hover:bg-orange-500">
+              Generate Design <BsArrowRight />
             </button>
-          </NavLink>
+
+            <NavLink to={"/singleproduct/:id"}>
+              <button className=" w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg mt-4 Hover:bg-orange-600 hover:text-white hover:bg-orange-500   bg-whitex">
+                Buy Now <BsArrowRight />
+              </button>
+            </NavLink>
+          </div>
         </div>
       </div>
       <NewDesign />

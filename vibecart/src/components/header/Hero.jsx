@@ -20,8 +20,9 @@ const Hero = () => {
             Design Your Vision, <br></br> AI-Powered Precision
           </h1>
           <p className="text-xs sm:text-sm md:text-md pb-2">
-            Your ideas, our AI: Crafting stunning designs effortlessly—logos,
-            illustrations, web layouts—bringing imagination to life.
+            Your ideas, our AI: Crafting stunning designs on Hoodie,
+            <br />
+            Sweatshirt, & Jersey
           </p>
           <NavLink to={"/singleproduct/:id"}>
             <button className="flex items-center gap-2 px-4 py-2 border rounded-lg mt-2  hover:bg-orange-600  hover:text-white bg-white text-orange-600">

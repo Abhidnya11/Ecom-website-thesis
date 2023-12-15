@@ -64,7 +64,7 @@ const Navbar = () => {
               className={
                 !nav
                   ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-white"
-                  : "fixed left-[-100%]"
+                  : "fixed left-[-100%] absolute"
               }
             >
               <NavLink to={"/"}>
